@@ -7,25 +7,25 @@ const Skills = () => {
     {
       title: 'Frontend',
       icon: Code,
-      skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Vue.js'],
+      skills: ['React', 'JavaScript','TypeScript', 'Next.js', 'Tailwind CSS', 'Bootstrap'],
       color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Backend',
       icon: Database,
-      skills: ['Node.js', 'Express', 'Python', 'PostgreSQL', 'MongoDB', 'Redis'],
+      skills: ['Node.js', 'PHP', 'SQL', 'MongoDB', 'APIs'],
       color: 'from-green-500 to-emerald-500'
     },
     {
       title: 'Design',
       icon: Palette,
-      skills: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'UI/UX Design', 'Prototyping'],
+      skills: ['Figma', 'Canva', 'Photoshop', 'Illustrator', 'UI/UX Design', 'Prototyping'],
       color: 'from-purple-500 to-pink-500'
     },
     {
       title: 'Tools & Others',
       icon: Zap,
-      skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Jest', 'Webpack'],
+      skills: ['Git', 'AWS', 'cursor', 'Vercel', 'Claud', 'Github copilot'],
       color: 'from-orange-500 to-red-500'
     }
   ];
@@ -124,7 +124,7 @@ const Skills = () => {
             className="text-2xl font-semibold text-gray-900 dark:text-white mb-8"
             variants={itemVariants}
           >
-            Other Technologies
+            Other Skills
           </motion.h3>
           
           <motion.div 
@@ -132,8 +132,8 @@ const Skills = () => {
             variants={containerVariants}
           >
             {[
-              'GraphQL', 'Firebase', 'Stripe', 'Socket.io', 'Electron', 'React Native',
-              'Sass', 'Laravel', 'Django', 'Kubernetes', 'Jenkins', 'Linux'
+              'Python', 'GenAI', 'MCP','Promt Engineering', 'Data Analysis', 'Power Apps', 
+              'Computer Networking', 'Database Optimization', 'Software Testing', 'Team Lead', 'Agile Methodologies', 'Problem Solving', 'Business Communication', 'Time Management', 'Adaptability', 'Critical Thinking', 'Collaboration'
             ].map((tech, index) => (
               <motion.span
                 key={tech}

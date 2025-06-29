@@ -117,9 +117,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 1.4 }}
         >
           {[
-            { Icon: Github, href: 'https://github.com', label: 'GitHub' },
-            { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-            { Icon: Mail, href: 'mailto:alex@example.com', label: 'Email' }
+            { Icon: Github, href: 'https://github.com/Tanzeelsameen', label: 'GitHub' },
+            { Icon: Linkedin, href: 'https://www.linkedin.com/in/tanzeela-sameen/', label: 'LinkedIn' },
+            { Icon: Mail, href: 'mailto:tanzeelasameen13@gmail.com', label: 'Email' }
           ].map(({ Icon, href, label }) => (
             <motion.a
               key={label}

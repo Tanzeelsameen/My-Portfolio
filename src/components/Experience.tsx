@@ -6,40 +6,42 @@ const Experience = () => {
   const experiences = [
     {
       type: 'work',
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and implemented CI/CD pipelines.',
-      technologies: ['React', 'Node.js', 'AWS', 'PostgreSQL', 'Docker']
+      title: 'Frontend Engineer',
+      company: 'Mayura Consultancy Services',
+      location: 'Banglore, India',
+      period: 'Sep 2024 - April 2025',
+     description: [
+                  'Improved the frontend by developing robust, reusable components, leading to a more efficient and maintainable codebase. Contributed over 2000 lines of code.',
+                  'Boosted team efficiency by 50% by implementing monorepo architecture and a reusable Design-System.',
+                  'Worked on live projects, ensuring timely delivery and smooth implementation. Incorporated client feedback to refine designs and deliver solutions aligned with requirements.',
+                  'Contributed to 10+ global projects (lyftyng.com, siruandu, Cnergee Global, 369nft.com), designed/optimized UIs for GMLM projects, and integrated unit testing with 80% code coverage.'
+                ],
+
+      technologies: ['Bootstrap', 'JavaScript','PHP', 'Codeigniter', 'MySQL', 'React','Tailwind CSS']
     },
     {
       type: 'work',
-      title: 'Frontend Developer',
-      company: 'Digital Agency Pro',
-      location: 'New York, NY',
-      period: '2020 - 2022',
-      description: 'Developed responsive web applications and collaborated with design teams to implement pixel-perfect UIs.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js']
+      title: 'Software Developer Intern',
+      company: 'BitSolve Technologies Pvt Ltd',
+      location: 'Nanded, India',
+      period: ' Feb 2024- May 2024',
+      description: [
+        'Developed and deployed AI-powered full-stack web applications using Vibe Coding, React, and AI tools like OpenAI and Hugging Face to create intelligent features such as real-time summarization, smart chat interfaces, and content generation.',
+        'Led front-end development with React and integrated multiple AI APIs seamlessly into backend systems, resulting in a 40% increase in user engagement and improved automation workflows.',
+        'Owned end-to-end feature delivery across the stack, contributing to 70% of core development efforts and collaborating closely with designers and AI specialists to align solutions with user needs.'
+      ],
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'APIs','OpenAI']
     },
     {
       type: 'education',
-      title: 'Bachelor of Computer Science',
-      company: 'State University',
-      location: 'Boston, MA',
-      period: '2016 - 2020',
-      description: 'Graduated Magna Cum Laude with focus on Software Engineering and Web Development.',
-      technologies: ['Java', 'Python', 'Database Systems', 'Algorithms']
+      title: 'Bachelors Of Technology',
+      company: ' MGMs College Of Engineering',
+      location: 'Nanded, India',
+      period: '2020 - 2024',
+      description: 'Graduated From top university with focus on Software Engineering and Core Development.',
+      technologies: ['Computer Networking', 'Python', 'Database Management', 'Algorithms', 'Software Testing', 'Team Lead', 'Agile Methodologies', 'Problem Solving',  'Time Management', 'Adaptability', 'Critical Thinking', 'Collaboration']
     },
-    {
-      type: 'work',
-      title: 'Junior Web Developer',
-      company: 'StartupXYZ',
-      location: 'Remote',
-      period: '2019 - 2020',
-      description: 'Built responsive websites and learned modern web development practices while completing my degree.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL']
-    }
+    
   ];
 
   const containerVariants = {
@@ -151,9 +153,17 @@ const Experience = () => {
                       <span>{exp.location}</span>
                     </div>
 
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      {exp.description}
-                    </p>
+                    <div className="text-gray-700 dark:text-gray-300 mb-4">
+                      {Array.isArray(exp.description) ? (
+                        <ul className="list-disc list-inside space-y-2">
+                          {exp.description.map((descItem, descIndex) => (
+                            <li key={descIndex}>{descItem}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{exp.description}</p>
+                      )}
+                    </div>
 
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, techIndex) => (
