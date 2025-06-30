@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
+import extensionImg from '../images/extension.jpg';
+import travel from '../images/travel.png';
 
 const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -8,7 +10,7 @@ const Projects = () => {
     {
       title: 'AI Chrome Extension',
       description: 'Developed an AI-powered content summarizer that extracts key information from lengthy articles, research papers, and documents. The tool uses advanced natural language processing techniques to provide concise summaries, making it easier for users to grasp essential points quickly. Developed an AI-powered Chrome Extension using Google\'s Gemini API to summarize web content in real-time, offering three summarizartion modes (brief, detailed, bullet) and improving content comprehension by 60%.',
-      image: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
+      image: extensionImg,
       technologies: ['TypeScript', 'JavaScript', 'Tailwind CSS'],
       github: 'https://github.com/Tanzeelsameen/concise-insight-chrome',
       //demo: 'https://demo.com',
@@ -17,7 +19,7 @@ const Projects = () => {
     {
       title: 'AI Travel Planner Agent',
       description: 'An Intelligent web application that creates personalized travel itineraries based on user preferences. Customized itineraries based on location, dates, budget, and interests. Comprehensive plans including day-by-day schedules, accommodations, attractions, food recommendations, and cost breakdowns. AI-generated detailed travel plans using Gemini AI, Interactive chat assistant for follow-up questions about your trip.',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: travel,
       technologies: ['React', 'TypeScript', 'Shadcn-ui', 'Openai'],
       github: 'https://github.com/Tanzeelsameen/AI-travel-planner',
       demo: 'https://travel-planner-agent.netlify.app/',
