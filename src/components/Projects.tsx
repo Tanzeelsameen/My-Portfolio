@@ -15,12 +15,12 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'AI Travel Planner Agent',
+      description: 'An Intelligent web application that creates personalized travel itineraries based on user preferences. Customized itineraries based on location, dates, budget, and interests. Comprehensive plans including day-by-day schedules, accommodations, attractions, food recommendations, and cost breakdowns. AI-generated detailed travel plans using Gemini AI, Interactive chat assistant for follow-up questions about your trip.',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'TypeScript', 'Socket.io', 'PostgreSQL'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      technologies: ['React', 'TypeScript', 'Shadcn-ui', 'Openai'],
+      github: 'https://github.com/Tanzeelsameen/AI-travel-planner',
+      demo: 'https://travel-planner-agent.netlify.app/',
       featured: true
     },
     {
