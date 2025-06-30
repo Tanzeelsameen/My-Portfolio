@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 
 const Projects = () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product catalog, shopping cart, and payment processing.',
+      title: 'AI Chrome Extension',
+      description: 'Developed an AI-powered content summarizer that extracts key information from lengthy articles, research papers, and documents. The tool uses advanced natural language processing techniques to provide concise summaries, making it easier for users to grasp essential points quickly. Developed an AI-powered Chrome Extension using Google\'s Gemini API to summarize web content in real-time, offering three summarizartion modes (brief, detailed, bullet) and improving content comprehension by 60%.',
       image: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      technologies: ['TypeScript', 'JavaScript', 'Tailwind CSS'],
+      github: 'https://github.com/Tanzeelsameen/concise-insight-chrome',
+      //demo: 'https://demo.com',
       featured: true
     },
     {
@@ -164,10 +165,37 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                
-                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="mb-4">
+                  {expandedIndex === index ? (
+                    <>
+                      <p className="text-gray-600 dark:text-gray-300 mb-2">
+                        {project.description}
+                      </p>
+                      <button
+                        className="text-blue-600 dark:text-blue-400 text-sm focus:outline-none hover:underline"
+                        onClick={() => setExpandedIndex(null)}
+                        aria-label="Show less"
+                      >
+                        Show less
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-gray-600 dark:text-gray-300 mb-2 line-clamp-3">
+                        {project.description}
+                      </p>
+                      {project.description.length > 120 && (
+                        <button
+                          className="text-blue-600 dark:text-blue-400 text-sm focus:outline-none hover:underline"
+                          onClick={() => setExpandedIndex(index)}
+                          aria-label="Read more"
+                        >
+                          Read more
+                        </button>
+                      )}
+                    </>
+                  )}
+                </div>
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
