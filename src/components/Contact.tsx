@@ -35,27 +35,27 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com'
+      value: 'tanzeelasameen13@gmail.com',
+      href: 'mailto:tanzeelasameen13@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 8600602656',
+      href: 'tel:+918600602656'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Maharashtra, India',
       href: 'https://maps.google.com'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+    { icon: Github, href: 'https://github.com/Tanzeelsameen', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/tanzeela-sameen/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/TanzeelaSameen', label: 'Twitter' }
   ];
 
   const containerVariants = {

@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import extensionImg from '../images/extension.jpg';
 import travel from '../images/travel.png';
+import sciencecollege from '../images/sciencecollege.png';
+import cnergee from '../images/cnergee.png';
 
 const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -26,41 +28,41 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Cnergee Global - GMLM E-commerce Platform',
+      description: 'A Full-Stack E-Commerce Platform that has GMLM integrated with it .',
+      image: cnergee,
       technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Sass'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      //github: '',
+      demo: 'https://www.cnergeeglobal.com/',
       featured: false
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations and dark mode support.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Learning Management System',
+      description: 'Developed a comprehensive Learning Management System(LMS) for Science College, Nanded, enhancing online education and academic management. The LMS project offers a dynamic and intuitive interface for educators, administrators, and learners, enabling them to collaborate, engage, and succeed in today’s digital learning environment.',
+      image: sciencecollege,
       technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      //github: 'https://github.com',
+      demo: 'https://nessciencecollegemis.org/',
       featured: false
     },
-    {
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with data visualization, scheduling features, and multi-platform integration.',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['Next.js', 'D3.js', 'Firebase', 'Material-UI'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-      featured: false
-    },
-    {
-      title: 'Fitness Tracker',
-      description: 'Mobile-first fitness tracking application with workout logging, progress tracking, and social features.',
-      image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-      featured: false
-    }
+    // {
+    //   title: 'Social Media Dashboard',
+    //   description: 'Analytics dashboard for social media management with data visualization, scheduling features, and multi-platform integration.',
+    //   image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //   technologies: ['Next.js', 'D3.js', 'Firebase', 'Material-UI'],
+    //   github: 'https://github.com',
+    //   demo: 'https://demo.com',
+    //   featured: false
+    // },
+    // {
+    //   title: 'Fitness Tracker',
+    //   description: 'Mobile-first fitness tracking application with workout logging, progress tracking, and social features.',
+    //   image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //   technologies: ['React Native', 'Expo', 'Firebase', 'Redux'],
+    //   github: 'https://github.com',
+    //   demo: 'https://demo.com',
+    //   featured: false
+    // }
   ];
 
   const containerVariants = {
