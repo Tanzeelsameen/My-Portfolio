@@ -13,7 +13,7 @@ const Skills = () => {
     {
       title: 'Backend',
       icon: Database,
-      skills: ['Node.js', 'PHP', 'SQL', 'MongoDB', 'APIs'],
+      skills: ['Node.js', 'PHP', 'SQL', 'APIs'],
       color: 'from-green-500 to-emerald-500'
     },
     {
