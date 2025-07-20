@@ -2,12 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
 
+// Import company images
+import mayuraLogo from '../images/mayura.png';
+import bitsolveLogo from '../images/bitsolve.jpg';
+import mgmLogo from '../images/mgm.png';
+
 const Experience = () => {
   const experiences = [
     {
       type: 'work',
       title: 'Frontend Engineer',
       company: 'Mayura Consultancy Services',
+      logo: mayuraLogo,
       location: 'Banglore, India',
       period: 'Sep 2024 - April 2025',
      description: [
@@ -23,6 +29,7 @@ const Experience = () => {
       type: 'work',
       title: 'Software Developer Intern',
       company: 'BitSolve Technologies Pvt Ltd',
+      logo: bitsolveLogo,
       location: 'Nanded, India',
       period: ' Feb 2024- May 2024',
       description: [
@@ -36,6 +43,7 @@ const Experience = () => {
       type: 'education',
       title: 'Bachelors Of Technology',
       company: ' MGMs College Of Engineering',
+      logo: mgmLogo,
       location: 'Nanded, India',
       period: '2020 - 2024',
       description: 'Graduated From top university with focus on Software Engineering and Core Development.',
@@ -142,8 +150,15 @@ const Experience = () => {
                       {exp.title}
                     </h3>
                     
-                    <div className="text-blue-600 dark:text-blue-400 font-semibold mb-2">
-                      {exp.company}
+                    <div className="flex items-center mb-2">
+                      <img 
+                        src={exp.logo} 
+                        alt={`${exp.company} logo`}
+                        className="w-8 h-8 rounded-full object-cover mr-3"
+                      />
+                      <div className="text-blue-600 dark:text-blue-400 font-semibold">
+                        {exp.company}
+                      </div>
                     </div>
 
                     <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm mb-3">
