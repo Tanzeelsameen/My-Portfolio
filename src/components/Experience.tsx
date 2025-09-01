@@ -6,9 +6,20 @@ import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
 import mayuraLogo from '../images/mayura.png';
 import bitsolveLogo from '../images/bitsolve.jpg';
 import mgmLogo from '../images/mgm.png';
+import noveumLogo from '../images/noveum.webp';
 
 const Experience = () => {
   const experiences = [
+    {
+      type: 'work',
+      title: 'Software Engineer',
+      company: 'Noeum AI / MagicAPI',
+      logo: noveumLogo,
+      location: 'SF, California, USA (Remote)',
+      period: 'July 2025 - Present',
+      description: [],  // To be updated later
+      technologies: []  // To be updated later
+    },
     {
       type: 'work',
       title: 'Frontend Engineer',
@@ -154,7 +165,7 @@ const Experience = () => {
                       <img 
                         src={exp.logo} 
                         alt={`${exp.company} logo`}
-                        className="w-8 h-8 rounded-full object-cover mr-3"
+                        className="w-12 h-12 rounded-full object-contain bg-white p-1 mr-3"
                       />
                       <div className="text-blue-600 dark:text-blue-400 font-semibold">
                         {exp.company}
