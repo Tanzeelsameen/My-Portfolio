@@ -19,13 +19,13 @@ const Skills = () => {
     {
       title: 'Design',
       icon: Palette,
-      skills: ['Figma', 'Canva', 'Photoshop', 'Illustrator', 'UI/UX Design', 'Prototyping'],
+      skills: ['Figma', 'Canva', 'Photoshop', 'Illustrator', 'UI/UX Design', 'v0'],
       color: 'from-purple-500 to-pink-500'
     },
     {
       title: 'Tools & Others',
       icon: Zap,
-      skills: ['Git', 'AWS', 'cursor', 'Vercel', 'Claud', 'Github copilot'],
+      skills: ['Git', 'AWS', 'cursor', 'Vercel', 'Postman', 'coderabbit' ],
       color: 'from-orange-500 to-red-500'
     }
   ];
@@ -132,7 +132,7 @@ const Skills = () => {
             variants={containerVariants}
           >
             {[
-              'Python', 'GenAI', 'MCP','Promt Engineering', 'Data Analysis', 'Power Apps', 
+              'Python', 'GenAI', 'MCP','Promt Engineering', 'Power Apps', 
               'Computer Networking', 'Database Optimization', 'Software Testing', 'Team Lead', 'Agile Methodologies', 'Problem Solving', 'Business Communication', 'Time Management', 'Adaptability', 'Critical Thinking', 'Collaboration'
             ].map((tech, index) => (
               <motion.span

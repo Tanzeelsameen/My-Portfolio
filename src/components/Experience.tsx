@@ -13,7 +13,7 @@ const Experience = () => {
     {
       type: 'work',
       title: 'Software Engineer',
-      company: 'Noeum AI / MagicAPI',
+      company: 'Noveum AI / MagicAPI',
       logo: noveumLogo,
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
