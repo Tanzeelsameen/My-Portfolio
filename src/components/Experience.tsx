@@ -18,7 +18,7 @@ const Experience = () => {
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
       description: [],  // To be updated later
-      technologies: ['Next.js','TypeScript', 'React', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
+      technologies: ['Next.js','TypeScript', 'React','Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
     },
     {
       type: 'work',
