@@ -17,7 +17,9 @@ const Experience = () => {
       logo: noveumLogo,
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
-      description: ['worked on improving caching and designing the UI.improved subscription flow for better user handling .'],  // To be updated later
+      description: ['worked on improving caching and designing the UI.improved subscription flow for better user handling .',
+                     'optimized the loading speed of API,market'
+      ],  // To be updated later
       technologies: ['Next.js','TypeScript', 'React','Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
     },
     {
