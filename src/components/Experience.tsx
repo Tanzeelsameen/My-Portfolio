@@ -18,7 +18,7 @@ const Experience = () => {
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
       description: ['worked on improving caching and designing the UI.improved subscription flow for better user handling .',
-                     'optimized the loading speed of API,market increased the performance score by 40%.Improved the user account analytics by adding advanced filters  '
+                     'optimized the loading speed of API,market increased the performance score by 40%.Improved the user account analytics by adding advanced filters.implemented revenue dashboard for better insights.'
       ],  // To be updated later
       technologies: ['Next.js','TypeScript', 'React','Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
     },
