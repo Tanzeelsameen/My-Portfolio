@@ -19,7 +19,8 @@ const Experience = () => {
       period: 'July 2025 - Present',
       description: ['worked on improving caching and designing the UI.improved subscription flow for better user handling .',
                      'optimized the loading speed of API,market increased the performance score by 40%.Improved the user account analytics by adding advanced filters.implemented revenue dashboard for better insights.',
-                     'worked on integrating third-party services for enhanced functionality.'
+                     'worked on integrating third-party services for enhanced functionality.',
+                     'Collaborated with cross-functional teams to define, design, and ship new features.'
       ],  // To be updated later
       technologies: ['Next.js','TypeScript', 'React','Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
     },
