@@ -18,12 +18,11 @@ const Experience = () => {
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
       description: ['worked on improving caching and designing the UI.improved subscription flow for better user handling .',
-                     'optimized the loading speed of API,market increased the performance score by 40%.Improved the user account analytics by adding advanced filters.implemented revenue dashboard for better insights.',
-                     'worked on integrating third-party services for enhanced functionality.',
-                     'Collaborated with cross-functional teams to define, design, and ship new features.',
-                     'redesing th payout system for better revenue management.'
+        'optimized the loading speed of API,market increased the performance score by 40%.Improved the user account analytics by adding advanced filters.implemented revenue dashboard for better insights.',
+        'worked on integrating third-party services for enhanced functionality.',
+        'redesing th payout system for better revenue management.'
       ],  // To be updated later
-      technologies: ['Next.js','TypeScript', 'React','Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']  
+      technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']
     },
     {
       type: 'work',
@@ -32,14 +31,14 @@ const Experience = () => {
       logo: mayuraLogo,
       location: 'Banglore, India',
       period: 'Sep 2024 - April 2025',
-     description: [
-                  'Improved the frontend by developing robust, reusable components, leading to a more efficient and maintainable codebase. Contributed over 2000 lines of code.',
-                  'Boosted team efficiency by 50% by implementing monorepo architecture and a reusable Design-System.',
-                  'Worked on live projects, ensuring timely delivery and smooth implementation. Incorporated client feedback to refine designs and deliver solutions aligned with requirements.',
-                  'Contributed to 10+ global projects (lyftyng.com, siruandu, Cnergee Global, 369nft.com), designed/optimized UIs for GMLM projects, and integrated unit testing with 80% code coverage.'
-                ],
+      description: [
+        'Improved the frontend by developing robust, reusable components, leading to a more efficient and maintainable codebase. Contributed over 2000 lines of code.',
+        'Boosted team efficiency by 50% by implementing monorepo architecture and a reusable Design-System.',
+        'Worked on live projects, ensuring timely delivery and smooth implementation. Incorporated client feedback to refine designs and deliver solutions aligned with requirements.',
+        'Contributed to 10+ global projects (lyftyng.com, siruandu, Cnergee Global, 369nft.com), designed/optimized UIs for GMLM projects, and integrated unit testing with 80% code coverage.'
+      ],
 
-      technologies: ['Bootstrap', 'JavaScript','PHP', 'Codeigniter', 'MySQL', 'React','Tailwind CSS']
+      technologies: ['Bootstrap', 'JavaScript', 'PHP', 'Codeigniter', 'MySQL', 'React', 'Tailwind CSS']
     },
     {
       type: 'work',
@@ -53,7 +52,7 @@ const Experience = () => {
         'Led front-end development with React and integrated multiple AI APIs seamlessly into backend systems, resulting in a 40% increase in user engagement and improved automation workflows.',
         'Owned end-to-end feature delivery across the stack, contributing to 70% of core development efforts and collaborating closely with designers and AI specialists to align solutions with user needs.'
       ],
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'APIs','OpenAI']
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'APIs', 'OpenAI']
     },
     {
       type: 'education',
@@ -63,9 +62,9 @@ const Experience = () => {
       location: 'Nanded, India',
       period: '2020 - 2024',
       description: 'Graduated From top university with focus on Software Engineering and Core Development.',
-      technologies: ['Computer Networking', 'Python', 'Database Management', 'Algorithms', 'Software Testing', 'Team Lead', 'Agile Methodologies', 'Problem Solving',  'Time Management', 'Adaptability', 'Critical Thinking', 'Collaboration']
+      technologies: ['Computer Networking', 'Python', 'Database Management', 'Algorithms', 'Software Testing', 'Team Lead', 'Agile Methodologies', 'Problem Solving', 'Time Management', 'Adaptability', 'Critical Thinking', 'Collaboration']
     },
-    
+
   ];
 
   const containerVariants = {
@@ -98,17 +97,17 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="text-center mb-16"
         >
-          <motion.h2 
+          <motion.h2
             className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4"
             variants={itemVariants}
           >
             Experience & Education
           </motion.h2>
-          <motion.div 
+          <motion.div
             className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-6"
             variants={itemVariants}
           />
-          <motion.p 
+          <motion.p
             className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             variants={itemVariants}
           >
@@ -128,9 +127,8 @@ const Experience = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className={`flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex-col md:flex-row`}
+                className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } flex-col md:flex-row`}
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-white dark:bg-gray-900 border-4 border-blue-600 rounded-full flex items-center justify-center z-10">
@@ -143,21 +141,18 @@ const Experience = () => {
 
                 {/* Content Card */}
                 <motion.div
-                  className={`w-full md:w-5/12 ${
-                    index % 2 === 0 ? 'md:pr-8 pl-16 md:pl-0' : 'md:pl-8 pl-16 md:pr-0'
-                  }`}
+                  className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-8 pl-16 md:pl-0' : 'md:pl-8 pl-16 md:pr-0'
+                    }`}
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="bg-white dark:bg-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                     <div className="flex items-center mb-3">
-                      <div className={`w-3 h-3 rounded-full mr-3 ${
-                        exp.type === 'work' ? 'bg-green-500' : 'bg-blue-500'
-                      }`}></div>
-                      <span className={`text-sm font-semibold px-2 py-1 rounded-full ${
-                        exp.type === 'work' 
-                          ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' 
+                      <div className={`w-3 h-3 rounded-full mr-3 ${exp.type === 'work' ? 'bg-green-500' : 'bg-blue-500'
+                        }`}></div>
+                      <span className={`text-sm font-semibold px-2 py-1 rounded-full ${exp.type === 'work'
+                          ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
                           : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-                      }`}>
+                        }`}>
                         {exp.type === 'work' ? 'Work' : 'Education'}
                       </span>
                     </div>
@@ -165,10 +160,10 @@ const Experience = () => {
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                       {exp.title}
                     </h3>
-                    
+
                     <div className="flex items-center mb-2">
-                      <img 
-                        src={exp.logo} 
+                      <img
+                        src={exp.logo}
                         alt={`${exp.company} logo`}
                         className="w-12 h-12 rounded-full object-contain bg-white p-1 mr-3"
                       />
