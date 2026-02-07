@@ -13,7 +13,7 @@ const Experience = () => {
     {
       type: 'work',
       title: 'Software Engineer',
-      company: 'Noveum AI / MagicAPI',
+      company: 'Noveum.ai',
       logo: noveumLogo,
       location: 'SF, California, USA (Remote)',
       period: 'July 2025 - Present',
@@ -150,8 +150,8 @@ const Experience = () => {
                       <div className={`w-3 h-3 rounded-full mr-3 ${exp.type === 'work' ? 'bg-green-500' : 'bg-blue-500'
                         }`}></div>
                       <span className={`text-sm font-semibold px-2 py-1 rounded-full ${exp.type === 'work'
-                          ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-                          : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+                        : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
                         }`}>
                         {exp.type === 'work' ? 'Work' : 'Education'}
                       </span>
