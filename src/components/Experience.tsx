@@ -22,7 +22,7 @@ const Experience = () => {
         'worked on integrating third-party services for enhanced functionality.',
         'redesing th payout system for better revenue management.'
       ],  // To be updated later
-      technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS']
+      technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS', 'Docker', 'Kubernetes',]
     },
     {
       type: 'work',
