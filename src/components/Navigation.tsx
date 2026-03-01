@@ -20,11 +20,18 @@ const Navigation = () => {
     { href: '#skills', label: 'Skills' },
     { href: '#experience', label: 'Experience' },
     { href: '#projects', label: 'Projects' },
+    { href: 'https://substack.com/@tanzeelasameen', label: 'Blog', external: true },
     { href: '#contact', label: 'Contact' }
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+  const handleNavClick = (item: { href: string; label: string; external?: boolean }) => {
+    if (item.external) {
+      window.open(item.href, '_blank', 'noopener,noreferrer');
+      setIsOpen(false);
+      return;
+    }
+
+    const element = document.querySelector(item.href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -35,11 +42,10 @@ const Navigation = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
+        ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg'
+        : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -55,7 +61,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <motion.button
                 key={item.href}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavClick(item)}
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -87,7 +93,7 @@ const Navigation = () => {
               {navItems.map((item) => (
                 <motion.button
                   key={item.href}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavClick(item)}
                   className="block w-full text-left py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                   whileHover={{ x: 10 }}
                 >
