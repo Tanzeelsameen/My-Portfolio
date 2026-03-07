@@ -24,7 +24,8 @@ const Experience = () => {
         'Onboarded sellers and helped them with the integration of APIs.',
         'Integrated more than 30+ models into the API Market',
         'worked with cross functional teams to deliver the product',
-        'worked on improving the SEO of the website'
+        'worked on improving the SEO of the website',
+        'onboarded 10+ sellers and helped them with the integration of APIs.'
       ],  // To be updated later
       technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS', 'Docker', 'Kubernetes',]
     },
