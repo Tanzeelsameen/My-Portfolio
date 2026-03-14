@@ -27,7 +27,7 @@ const Experience = () => {
         'worked on improving the SEO of the website',
         'onboarded 10+ sellers and helped them with the integration of APIs.'
       ],  // To be updated later
-      technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS', 'Docker', 'Kubernetes',]
+      technologies: ['Next.js', 'TypeScript', 'React', 'Git', 'Node.js', 'Redis', 'PostgreSQL', 'Api', 'AWS', 'Docker', 'Kubernetes', 'Elasticsearch', 'stripe']
     },
     {
       type: 'work',
